@@ -1,36 +1,47 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #ffffff;
 }
 
-/* Скидання маркерів та підкреслення */
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+}
+
 ul {
     list-style-type: none;
-    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-p {
-    margin: 0;
-}
-
-/* Зображення — залишаємо тільки базовий дисплей */
 img {
     display: block;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
-/*  ХЕДЕР  */
+/* --- ХЕДЕР --- */
 
 .logo {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
@@ -51,7 +62,6 @@ img {
     color: #2e2f42;
 }
 
-/* Активні стани  */
 .nav-link:hover,
 .nav-link:focus,
 .contacts-link:hover,
@@ -70,7 +80,7 @@ img {
     color: #434455;
 }
 
-/*  HERO  */
+/* --- СЕКЦІЇ --- */
 
 .hero {
     background-color: #2e2f42;
@@ -86,7 +96,7 @@ img {
 
 .hero-btn {
     background-color: #4d5ae5;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -100,8 +110,7 @@ img {
     background-color: #404bbf;
 }
 
-/* ТЕКСТОВІ ЕЛЕМЕНТИ  */
-
+/* Спільні стилі для заголовків та тексту */
 .features-subtitle,
 .team-subtitle,
 .portfolio-subtitle {
@@ -120,6 +129,7 @@ img {
     letter-spacing: 0.02em;
 }
 
+/* Секція Команда */
 .team {
     background-color: #f4f4fd;
 }
@@ -134,8 +144,11 @@ img {
     color: #2e2f42;
 }
 
-/*  FOOTER  */
+.team-item {
+    background-color: #ffffff;
+}
 
+/* ФУТЕР */
 .footer {
     background-color: #2e2f42;
 }
