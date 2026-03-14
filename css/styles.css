@@ -1,43 +1,33 @@
-/* Налаштування шрифтів та кольору для body */
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
-    /* Slate */
     background-color: #ffffff;
 }
 
-/*  Скидання значень за замовчуванням */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-
-/*  Скидання маркерів списків */
-ul,
-ol {
+/* Скидання маркерів та підкреслення */
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-/* Скидання підкреслення посилань */
 a {
     text-decoration: none;
 }
 
-/* Налаштування зображень */
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+h1,
+h2,
+h3,
+p {
+    margin: 0;
 }
 
-/* Технічний клас для прихованого заголовка  */
+/* Зображення — залишаємо тільки базовий дисплей */
+img {
+    display: block;
+}
+
+/* Клас для прихованого заголовка */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -61,12 +51,10 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    /* Iris */
 }
 
 .logo-studio-header {
     color: #2e2f42;
-    /* Navy Blue */
 }
 
 .nav-link {
@@ -77,13 +65,12 @@ img {
     color: #2e2f42;
 }
 
-/* Активні стани при наведенні та фокусі */
+/* Активні стани  */
 .nav-link:hover,
 .nav-link:focus,
 .contacts-link:hover,
 .contacts-link:focus {
     color: #404bbf;
-    /* Ocean */
 }
 
 .contacts {
@@ -97,7 +84,7 @@ img {
     color: #434455;
 }
 
-/* СЕКЦІЯ 1: HERO */
+/*  HERO  */
 
 .hero {
     background-color: #2e2f42;
@@ -106,7 +93,6 @@ img {
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
-    /* C10: множник */
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
@@ -121,7 +107,6 @@ img {
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
-    /* C13 */
 }
 
 .hero-btn:hover,
@@ -129,9 +114,11 @@ img {
     background-color: #404bbf;
 }
 
-/* СЕКЦІЯ 2: FEATURES */
+/* ТЕКСТОВІ ЕЛЕМЕНТИ  */
 
-.features-subtitle {
+.features-subtitle,
+.team-subtitle,
+.portfolio-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -139,48 +126,19 @@ img {
     color: #2e2f42;
 }
 
-.features-text {
+.features-text,
+.team-text,
+.portfolio-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
-/* СЕКЦІЯ 3: TEAM */
 
 .team {
     background-color: #f4f4fd;
-    /* Cloud */
 }
 
-.team-title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-}
-
-.team-item {
-    background-color: #ffffff;
-}
-
-.team-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.team-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
-/* СЕКЦІЯ 4: PORTFOLIO  */
-
+.team-title,
 .portfolio-title {
     font-size: 36px;
     line-height: 1.11;
@@ -190,21 +148,7 @@ img {
     color: #2e2f42;
 }
 
-.portfolio-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.portfolio-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
-/* ФУТЕР */
+/*  FOOTER  */
 
 .footer {
     background-color: #2e2f42;
